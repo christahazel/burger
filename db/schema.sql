@@ -1,0 +1,10 @@
+CREATE TABLE pets (
+	id INTEGER(11) 
+	AUTO_INCREMENT NOT NULL, 
+	name VARCHAR(30) NOT NULL,  
+	type VARCHAR(30) NOT NULL, 
+	student_id INTEGER(11) NOT NULL, 
+	PRIMARY KEY(id), 
+	FOREIGN KEY(student_id) 
+	REFERENCES students(id) 
+	);
